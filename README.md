@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
 
-## Getting Started
+An Airbnb-inspired property listing application built with modern web technologies. This project serves as the foundational milestone for creating a scalable, responsive, and type-safe web application.
 
-First, run the development server:
+## 🚀 Project Goals
+The primary objective of this milestone is to scaffold a production-ready Next.js application. It focuses on:
+* **Scalability:** Using a modular folder structure.
+* **Type Safety:** Implementing TypeScript to prevent runtime errors.
+* **Maintainability:** Using reusable components and ESLint for code quality.
+* **Responsiveness:** Styling with Tailwind CSS for mobile-friendly designs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+* **Framework:** Next.js (Pages Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Linting:** ESLint
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Project Structure
+The project follows a clean and industry-standard directory structure:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+* **`components/`**: Contains reusable UI components.
+    * `common/`: Generic components like `Card.tsx` and `Button.tsx` used throughout the app.
+* **`interfaces/`**: Defines TypeScript interfaces (e.g., `CardProps`, `ButtonProps`) to ensure data consistency across the application.
+* **`constants/`**: Stores static data, configuration settings, and reusable strings (e.g., API URLs, page titles).
+* **`public/assets/`**: Stores static assets such as images, icons, and SVGs.
+* **`pages/`**: Next.js pages that map to application routes.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 💻 Getting Started
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Follow these steps to run the project locally on your machine.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+* Node.js (v16 or higher)
+* npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Clone the repository** (if applicable) or navigate to the project directory:
+    ```bash
+    cd alx-listing-app
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4.  **View the application:**
+    Open your browser and verify the app is running at:
+    [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Testing
+To verify the project setup:
+1.  Ensure no ESLint errors appear in the terminal.
+2.  Check that Tailwind styles are applied correctly (cards should look styled).
+3.  Verify that TypeScript interfaces are enforcing props correctly in components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+*Project developed as part of the ALX Software Engineering Program.*
